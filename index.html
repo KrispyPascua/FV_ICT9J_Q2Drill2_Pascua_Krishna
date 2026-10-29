@@ -6,23 +6,192 @@
     <title>Q2 Drill 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        .portal-btn {
+            width: 110px;
+            min-width: 110px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
         h1{
             text-align: center;
-            font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-family: Montserrat;
         }
         h2{
             text-align: center;
+            font-weight: bold;
+            font-family: Poppins;
         }
         p{
             text-align: center;
+            font-size: 18px;
+        } 
+        .programs {
+            display: flex;
+            justify-content: center;
+            gap: 1px;
+            padding: 48px;
+            margin: 0;
+            margin-right: 0px;
         }
+
+        .programs li {
+            width: 300px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .programs li span {
+            white-space: nowrap;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color:  #23415C;;
+        }
+
+        .programs li span::before {
+            content: none;
+        }
+        #photo1{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo2{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo3{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo4{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo5{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .campus{
+            display: flex;
+            justify-content: center;
+            gap: 1px;
+            padding: 48px;
+            margin: 0;
+            margin-right: 0px;
+        }
+
+        .campus li {
+            width: 300px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .campus li span {
+            white-space: nowrap;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color:  #23415C;;
+        }
+
+        .campus li span::before {
+            content: none;
+        }
+        #photo6{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo7{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo8{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo9{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo10{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        .fillup {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+            padding: 30px;
+            margin: auto;
+            display: block;
+            background: linear-gradient(135deg, #8AD6D1, #359FA0);
+            box-shadow: 0 3px 10px rgb(73, 53, 109);
+        }
+
+        #funame, #emailadd, #number, #identity, #subject, #message{
+            width: 100%;
+            height: 45%;
+            border-radius: 5px;
+            text-align: left;
+            color: black;
+            font-size: 17px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #submit{
+            text-align: center;
+            background-color: #037051;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+        }
+        h6{
+            text-align: center;
+            color: white;
+            background-color: #10796c;
+            font-size: 20px;
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 100%;
+        }
+        
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10" alt="logo" id="logo" class="rounded-circle" style="height: 90px; width: 90px"></a>
+    <a class="navbar-brand" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10" alt="logo" id="logo" class="rounded-circle" style="height: 60px; width: 60px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,19 +210,18 @@
           <a class="nav-link" href="#Contact">Contact Us</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">My Portal</button>
+      <form class="d-flex align-items-center gap-2 navbar-form">
+        <input class="form-control search-input" type="search" placeholder="Search">
+        <button class="btn btn-primary portal-btn" type="button">My Portal</button>
       </form>
     </div>
   </div>
 </nav>
-
 <header>
     <div class="container-fluid m-0 p-0">
         <div class="row">
             <div class="col">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmy-42oYQ08Ju-O7NoQTBxnzbmdJxj-z6xweSfLB5cqns800f9cvCbek&s=10" id="image1" class="img-fluid w-100 d-block" alt="image1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmy-42oYQ08Ju-O7NoQTBxnzbmdJxj-z6xweSfLB5cqns800f9cvCbek&s=10" id="hero" class="img-fluid w-100 d-block" alt="hero">
             </div>
         </div>
     </div>
@@ -65,25 +233,183 @@
     <br>
     <h2>Where Learning Inspires Greatness</h2>
     <br>
-    <p>Welcome to OB Montessori, a place where young minds grow, talents flourish, and values are built. Guided by the Montessori approach to education, the school encourages students to become independent, responsible, and compassionate individuals.</p>
-    <br>
+    <p>Welcome to OB Montessori, a place where young minds grow, talents flourish, and values are built.</p>
+    <p>Guided by the Montessori approach to education, the school encourages students to become independent, responsible, and compassionate individuals.</p>
     <p>Discover a learning community dedicated to academic excellence, character development, and preparing students for a brighter future.</p>
 </section>
-<hr>
+<br>
 <section id="Academic">
-    <h1>Academic Programs</h1>
-</section>
-<hr>
-<section id="Campuses">
-    <h1>Campuses</h1>
-</section>
-<hr>
-<section id="Contact">
-    <h1>Contact Us</h1>
+    <h2 style="color: white; background-color: #359FA0; padding: 10px;">Academic Programs</h2>
+
+    <dl class="programs">
+        <li class="casa">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/48d1c8ef-6412-4b7b-81fe-a50d7f1189d6/Casa+-+Admission+Requirements" alt="CASA" id="photo1" class="rounded">
+            <div class="title">
+                <span>Casa</span>
+            </div>
+            <dd>Ages 3-5</dd>
+        </li>
+        <br>
+
+        <li class="primary">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/a248ce13-24ca-4d30-9c98-763e301e2240/PRIMARY+PROGRAM+3+-+RAF08012.JPG" alt="primary" id="photo2" class="rounded">
+            <div class="title">
+                <span>Primary Grade School</span>
+            </div>
+            <dd>Ages 6-8</dd>
+        </li>
+        <br>
+
+        <li class="intermed">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/fdabba98-61bf-4946-a1e2-246c208f13f8/1+20240226_094559+copy.jpg" alt="intermed" id="photo3" class="rounded">
+            <div class="title">
+                <span>Intermediate Grade School</span>
+            </div>
+            <dd>Ages 9-12</dd>
+        </li>
+        <br>
+
+        <li class="junior">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/bd21fe51-4035-4581-af3d-8e5ad73c641e/RAF09633.JPG" alt="junior" id="photo4" class="rounded">
+            <div class="title">
+                <span>Junior High School</span>
+            </div>
+            <dd>Ages 13-16</dd>
+        </li>
+        <br>
+
+        <li class="senior">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/dd77fda9-d2bd-47aa-9576-830b020639f2/JAR_4005a+%281%29.jpg" alt="senior" id="photo5" class="rounded">
+            <div class="title">
+                <span>Senior High School</span>
+            </div>
+            <dd>Ages 17-18</dd>
+        </li>
+        <br>
+    </dl>
+    <div class="container">
+        <button style="font-size: 25px; padding: 12px; border-radius: 15px; color: white; background-color: #2e5576;">Inquire Now!</button>
+    </div>
 </section>
 <br>
+
+<section id="Campuses">
+    <h2 style="color: white; background-color: #359FA0; padding: 10px;">Campuses</h2>
+
+    <dl class="campus">
+        <li class="greenhills">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/affba656-d015-4b96-a8ba-3ef5bbbc2c39/OBMC+MONTESSORI+GH+-+AY+2026+FA.jpg" alt="greenhills" id="photo6" class="rounded">
+            <div class="title">
+                <span>Greenhills</span>
+            </div>
+        </li>
+        <br>
+
+        <li class="staana">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/97d122d3-7288-49cb-bcdd-3c210e3366f8/OBMC+MONTESSORI+SA+1+-+AY+2026+FA.jpg" alt="staana" id="photo7" class="rounded">
+            <div class="title">
+                <span>Sta. Ana</span>
+            </div>
+        </li>
+        <br>
+
+        <li class="laspinas">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQ8DWjt43ldlxuDFKnTjpsjDiQBVWmh5go7G8g7rB4p6CuUgHMEqBfYc&s=10" alt="laspinas" id="photo8" class="rounded">
+            <div class="title">
+                <span>Las Piñas</span>
+            </div>
+        </li>
+        <br>
+
+        <li class="fairview">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9804865a-f6de-47d0-b463-c569491b9621/OBMC+MONTESSORI+FV+1+-+AY+2026+FA.jpg" alt="fairview" id="photo9" class="rounded">
+            <div class="title">
+                <span>Fairview</span>
+            </div>
+        </li>
+        <br>
+
+        <li class="angeles">
+            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/51bf9a1b-c4fc-42b1-abe6-945af52780da/OBMC+MONTESSORI+AN+1+-+AY+2026+FA.jpg" alt="angeles" id="photo10" class="rounded">
+            <div class="title">
+                <span>Angeles</span>
+            </div>
+        </li>
+        <br>
+    </dl>
+</section>
+
+<section id="Contact">
+    <h2 style="color: white; background-color: #359FA0; padding: 10px;">Contact Us</h2>
+    <br>
+    <br>
+    <div class="fillup">
+        <form action="">
+            <h6>Have questions about our school, admissions, or programs? Fill out the form below, and our team will be happy to help.</h6>
+
+            <span><label for="funame">Full Name</label></span>
+            <br>
+            <input type="name" id="funame" name="funame" placeholder="E.g. Juan Dela Cruz"required>
+            <br>
+            <br>
+
+            <span><label for="emailadd">Email Address</label></span>
+            <br>
+            <input type="email" id="emailadd" name="emailadd" placeholder="E.g. Dela Cruz,j@obmontessori.edu.ph" required>
+            <br>
+            <br>
+
+            <span><label for="number">Contact Number</label></span>
+            <br>
+            <input type="tel" id="number" name="number" placeholder="E.g. 09XX XXX XXXX" required>
+            <br>
+            <br>
+
+            <span><label for="identity">I am a...</label></span>
+            <br>
+            <input type="radio" id="identity1" name="person">
+               <label for="identiy1" class="radio-text">Parent/Guardian</label>
+            <br>
+            <input type="radio" id="identity2" name="person">
+               <label for="identiy2" class="radio-text">Prospective Student</label>
+            <br>
+            <input type="radio" id="identity3" name="person">
+               <label for="identiy3" class="radio-text">Current Student</label>
+            <br>
+            <input type="radio" id="identity4" name="person">
+               <label for="identiy4" class="radio-text">Alumnus/Alumna</label>
+            <br>
+            <input type="radio" id="identity5" name="person">
+               <label for="identiy5" class="radio-text">Other</label>
+            <br>
+            <br>
+
+            <span><label for="subject">Subject of Inquiry</label></span>
+            <br>
+            <select name="subject" id="subject">
+                <option value="enroll">Admissions/Enrollment</option>
+                <option value="programs">Academic Programs</option>
+                <option value="tuition">Tuition and Fees</option>
+                <option value="general">General Inquiry</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+
+            <span><label for="message">Message</label></span>
+            <br>
+            <textarea id="message" name="message" rows="6" cols="65" placeholder="Please tell us how can we help you..." required></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</section>
+<br>
+<br>
 <footer>
-    <p>@2026 Krishna Pascua. All rights reserved.</p>
+    <p style="color: white; background-color: #359FA0; padding: 10px;">@2026 O.B. Montessori Center. All Rights Reserved.</p>
 </footer>
 </body>
 </html>
